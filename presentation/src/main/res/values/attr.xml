@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CardCustomView">
+        <attr name="schemeText" format="string" />
+        <attr name="brandText" format="string" />
+        <attr name="cardTypeText" format="string" />
+        <attr name="countryText" format="string" />
+        <attr name="bankNameText" format="string" />
+        <attr name="bankSiteText" format="string" />
+        <attr name="bankNumberText" format="string" />
+    </declare-styleable>
+</resources>

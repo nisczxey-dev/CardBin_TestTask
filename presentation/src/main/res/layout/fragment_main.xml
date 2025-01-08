@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".screens.main.MainFragment">
+
+    <TextView
+        android:id="@+id/tv_desc_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_card_info"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ed_card_bin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="@dimen/margin_top_edittext"
+        app:counterEnabled="true"
+        app:counterMaxLength="8">
+
+        <EditText
+            android:id="@+id/ed_input_bin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:digits="0123456789"
+            android:ems="8"
+            android:gravity="center_horizontal"
+            android:hint="@string/_45717360_hint_for_ed"
+            android:inputType="number"
+            android:maxLength="8" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_get_card_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20dp"
+        android:text="@string/text_btn_get_card_info"
+        android:textAllCaps="false" />
+
+
+    <com.nisczxey.presentation.screens.main.view.CardCustomView
+        android:id="@+id/bank_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

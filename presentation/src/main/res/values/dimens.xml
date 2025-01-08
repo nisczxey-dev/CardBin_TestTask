@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_height">55dp</dimen>
+    <dimen name="top_margin">50dp</dimen>
+    <dimen name="margin_top_edittext">20dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="_10sp">10sp</dimen>
+    <dimen name="_30dp_margin">30dp</dimen>
+    <dimen name="recycler_item_height">78dp</dimen>
+    <dimen name="_120dp">120dp</dimen>
+    <dimen name="_10dp_margin">10dp</dimen>
+</resources>

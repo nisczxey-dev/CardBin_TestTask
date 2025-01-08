@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="get_card_info">Get Card Info</string>
+    <string name="_45717360_hint_for_ed">numbers</string>
+    <string name="scheme_network">SCHEME / NETWORK</string>
+    <string name="brand">BRAND</string>
+    <string name="type">TYPE</string>
+    <string name="country">COUNTRY</string>
+    <string name="bank">BANK</string>
+    <string name="text_btn_get_card_info">Get card Info</string>
+</resources>

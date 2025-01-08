@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="20dp"
+    android:paddingStart="@dimen/margin_20dp"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <TextView
+        android:id="@+id/tv_desc_scheme"
+        style="@style/Desc.TextView"
+        android:text="@string/scheme_network"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_scheme"
+        style="@style/InfoTextView"
+        app:layout_constraintStart_toStartOf="@id/tv_desc_scheme"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc_scheme"
+        tools:text="Visa" />
+
+    <TextView
+        android:id="@+id/tv_desc_brand"
+        style="@style/Desc.TextView"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:text="@string/brand"
+        app:layout_constraintStart_toStartOf="@id/tv_scheme"
+        app:layout_constraintTop_toBottomOf="@id/tv_scheme" />
+
+    <TextView
+        android:id="@+id/tv_brand"
+        style="@style/InfoTextView"
+        app:layout_constraintStart_toStartOf="@id/tv_desc_brand"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc_brand"
+        tools:text="Visa/Dankort" />
+
+    <TextView
+        android:id="@+id/tv_desk_bank"
+        style="@style/Desc.TextView"
+        android:layout_marginHorizontal="@dimen/_120dp"
+        android:text="@string/bank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bank"
+        style="@style/InfoTextView"
+        app:layout_constraintStart_toStartOf="@id/tv_desk_bank"
+        app:layout_constraintTop_toBottomOf="@id/tv_desk_bank"
+        tools:text="Jyske Bank, Hjørring" />
+
+    <TextView
+        android:id="@+id/tv_bank_url"
+        style="@style/InfoTextView"
+        android:textSize="@dimen/_10sp"
+        app:layout_constraintStart_toStartOf="@id/tv_bank"
+        app:layout_constraintTop_toBottomOf="@id/tv_bank"
+        tools:text="www.jyskebank.dk" />
+
+    <TextView
+        android:id="@+id/tv_bank_number"
+        style="@style/InfoTextView"
+        android:textSize="@dimen/_10sp"
+        app:layout_constraintStart_toStartOf="@id/tv_bank_url"
+        app:layout_constraintTop_toBottomOf="@id/tv_bank_url"
+        tools:text="+4589893300" />
+
+    <TextView
+        android:id="@+id/tv_desk_type"
+        style="@style/Desc.TextView"
+        android:layout_marginEnd="@dimen/_30dp_margin"
+        android:text="@string/type"
+        app:layout_constraintEnd_toStartOf="@id/tv_desk_bank"
+        app:layout_constraintStart_toEndOf="@id/tv_desc_scheme"
+        app:layout_constraintTop_toTopOf="@id/tv_desc_scheme" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        style="@style/InfoTextView"
+        app:layout_constraintStart_toStartOf="@id/tv_desk_type"
+        app:layout_constraintTop_toBottomOf="@id/tv_desk_type"
+        tools:text="Debit" />
+
+    <TextView
+        android:id="@+id/tv_desk_country"
+        style="@style/Desc.TextView"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:text="@string/country"
+        app:layout_constraintStart_toStartOf="@id/tv_type"
+        app:layout_constraintTop_toBottomOf="@id/tv_type" />
+
+    <TextView
+        android:id="@+id/tv_country"
+        style="@style/InfoTextView"
+        app:layout_constraintStart_toStartOf="@id/tv_desk_country"
+        app:layout_constraintTop_toBottomOf="@id/tv_desk_country"
+        tools:text="🇩🇰 Denmark" />
+
+</merge>
